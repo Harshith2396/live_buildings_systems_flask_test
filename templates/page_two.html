@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table, th, td, h3 {
+  border:1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Meter Data</title>
+</head>
+<body>
+<h3> Data Of Meter </h3>
+<table>
+    {%for i in data.get("data")%}
+    <tr>
+        <td>{{i}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>
